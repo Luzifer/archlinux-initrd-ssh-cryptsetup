@@ -76,7 +76,6 @@ build() {
 	# SSH-related files
 	add_file "${dropbear_authorized_keys}" "/root/.ssh/authorized_keys"
 	add_file "/etc/dropbear/dropbear_rsa_host_key"
-	add_file "/etc/dropbear/dropbear_dss_host_key"
 	add_file "/etc/dropbear/dropbear_ecdsa_host_key"
 
 	# cryptsetup-related files
