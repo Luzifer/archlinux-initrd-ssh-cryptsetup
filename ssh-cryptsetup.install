@@ -43,10 +43,6 @@ build() {
 		echo "There is no root key(s) in ${dropbear_authorized_keys}. Skipping."
 		return 0
 	fi
-	if ! sshcs_check_nonempty "${etc_crypttab}"; then
-		echo "There is no device in ${etc_crypttab}. Skipping."
-		return 0
-	fi
 
 	umask 0022
 
